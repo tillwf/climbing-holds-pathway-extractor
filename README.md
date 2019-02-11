@@ -7,6 +7,9 @@ This program was first design to work on Arkose picture from the site https://ww
 
 Inspired from https://www.pyimagesearch.com/2014/08/04/opencv-python-color-detection/
 
+**Example:**:
+
+![Animation example](https://github.com/tillwf/climbing-holds-pathway-extractor/blob/master/examples/n7mHJwtRJxf52L9dw.gif)
 
 ## Installation
 
