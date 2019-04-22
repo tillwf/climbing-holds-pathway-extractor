@@ -128,7 +128,7 @@ def main(filename, edge_detector):
     if edge_detector:
         picture.remove_background(edge_detector)
 
-    for colorname, boundaries in HSV_BOUNDARIES.iteritems():
+    for colorname, boundaries in HSV_BOUNDARIES.items():
         picture.extract_color(colorname, boundaries)
 
 if __name__ == "__main__":
