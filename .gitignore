@@ -1,3 +1,6 @@
+# HED model
+hed_model/hed_pretrained_bsds.caffemodel
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
