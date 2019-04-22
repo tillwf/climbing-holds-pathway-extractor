@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```
-python extractor -i examples/iQnnQ47T9ZnpxWMJf.jpg -e hed
+python extractor.py -i examples/iQnnQ47T9ZnpxWMJf.jpg -e hed
 ```
 
 It will create a file `examples/iQnnQ47T9ZnpxWMJf_<color>.jpg` for each color detected (from the 6 decribed earlier).
@@ -47,7 +47,7 @@ Notes: For the `red` color, two ranges are used. The ones below and above 0.
 A bluring effect is added to ease the readability, for the black holds in particular, but you can easily remove it.
 
 
-## Ideas
+## Ideas
 
  - Cut as much as possible the holds. Then cluster the colors using `BIRCH` algorithm and filter on the closest color in input
  - Take the full picture and apply `DBSCAN` algorithm to partition the picture and filter on the closest color in input
