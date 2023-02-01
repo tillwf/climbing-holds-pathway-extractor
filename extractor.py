@@ -55,8 +55,8 @@ class Picture():
         lower, upper = boundaries
 
         # create NumPy arrays from the boundaries
-        lower = np.array(lower, dtype="uint8")
-        upper = np.array(upper, dtype="uint8")
+        lower = np.array(lower).astype("uint8")
+        upper = np.array(upper).astype("uint8")
         # find the colors within the specified boundaries
         # and apply the mask
         mask_color = cv2.inRange(
@@ -68,8 +68,8 @@ class Picture():
             lower, upper = RED_UPPER_BOUNDARIES
 
             # create NumPy arrays from the boundaries
-            lower = np.array(lower, dtype="uint8")
-            upper = np.array(upper, dtype="uint8")
+            lower = np.array(lower).astype("uint8")
+            upper = np.array(upper).astype("uint8")
             mask_color_neg = cv2.inRange(
                 self.img_hsv,
                 lower,
@@ -124,7 +124,7 @@ class Picture():
 
 
 def main(filename, edge_detector):
-    picture = Picture(filename=filename, debug=False)
+    picture = Picture(filename=filename, debug=True)
     if edge_detector:
         picture.remove_background(edge_detector)
 

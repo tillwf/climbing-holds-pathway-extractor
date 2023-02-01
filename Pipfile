@@ -6,9 +6,9 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-numpy = "==1.16.0"
-opencv-python = "==4.0.0.21"
+numpy = "==1.24.1"
+opencv-python = "==4.7.0.68"
 ipdb = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.10"
